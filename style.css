@@ -1,0 +1,312 @@
+/* Reset default margins */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color */
+  body {
+    background-color: #e3e4d1;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #c17be1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the navigation menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+/* Basic reset */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* Set Poppins as the default font */
+}
+/* Body settings for scroll snapping */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-type: y mandatory; /* Enables vertical snap scrolling */
+  overflow-y: scroll; /* Enables vertical scrolling */
+}
+/* Hero Section Styles */
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: Left;
+  height: 100vh; /* Full height of the viewport */
+  background-image: url('PortfolioImages/steve-johnson-rYYkvS7RsLg-unsplash.jpg'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire hero section */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-repeat: repeat;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  scroll-snap-align: start; /* Align this section to the start */
+
+}
+
+
+#hero h1 {
+  font-size: 7rem; /* Larger font size for the title */
+  font-weight: 400; /* Bold style */
+  margin-bottom: 50px;
+}
+
+#hero p {
+  font-size: 1.8rem; /* Slightly larger for subtitle */
+  font-weight: 20; /* Regular weight */
+  margin-bottom: 50px;
+  max-width: 600px; /* Optional: Set max width for better readability */
+}
+/* Scroll Arrow Styles */
+.scroll-arrow {
+  display: inline-block; /* Inline block to control size */
+  font-size: 4rem; /* Make the arrow bigger */
+  color: white; /* Make the arrow white */
+  text-decoration: none; /* Remove any underline */
+  margin-top: 30px; /* Add space above the arrow */
+  cursor: pointer; /* Make the cursor a pointer on hover */
+  animation: bounce 1s infinite; /* Add the bounce animation */
+  transition: transform 0.3s ease-in-out; /* Smooth transform */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0); /* Starting position */
+  }
+  50% {
+    transform: translateY(-15px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Back to original position */
+  }
+}
+
+/* Hover effect (Optional) */
+.scroll-arrow:hover {
+  transform: translateY(-10px); /* Add a slight upward motion on hover */
+}
+
+
+/* Second Hero Section (Professional Summary) */
+#professional-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+  height: 100vhau; /* Full height of the viewport */
+  background-image: url('PortfolioImages/steve-johnson-hPcQUdQnZjM-unsplash.jpg'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire hero section */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  color: white;
+  text-align: right;
+  padding: 20px;
+  scroll-snap-align: start; /* Align this section to the start */
+
+
+}
+/* Image Section */
+.summary-photo {
+  margin-right: 900px;           /* Add space to the right of the image */
+}
+/* Styling the image */
+.summary-photo img {
+  width: 500px; /* Set the width you want */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  border-radius: 50%; /* Circular border */
+  border: 5px solid white; /* White border */
+  object-fit: cover; /* Ensure the image does not stretch */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+}
+/* Style the text for the professional summary */
+#professional-summary h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#professional-summary p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-left: 550px;
+  line-height: 1.6;
+}
+
+#professional-summary a {
+  color: #fff; /* Style any links if needed */
+  text-decoration: none;
+}
+/* Example 1 Section Styles */
+#example-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: Left;
+  height: 100vh; /* Full height of the viewport */
+  background-image: url('PortfolioImages/steve-johnson-rYYkvS7RsLg-unsplash.jpg'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire hero section */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-repeat: repeat;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  scroll-snap-align: start; /* Align this section to the start */
+}
+#example-1 h1 {
+  font-size: 7rem; /* Larger font size for the title */
+  font-weight: 400; /* Bold style */
+  margin-bottom: 50px;
+}
+
+#example-1 p {
+  font-size: 1.8rem; /* Slightly larger for subtitle */
+  font-weight: 20; /* Regular weight */
+  margin-bottom: 50px;
+  max-width: 600px; /* Optional: Set max width for better readability */
+}
+/* Example 2 Section Styles */
+#example-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+  height: 100vh; /* Full height of the viewport */
+  background-image: url('PortfolioImages/steve-johnson-hPcQUdQnZjM-unsplash.jpg'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire hero section */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-repeat: repeat;
+  color: white;
+  text-align: right;
+  padding: 20px;
+  scroll-snap-align: start; /* Align this section to the start */
+}
+#example-2 h1 {
+  font-size: 7rem; /* Larger font size for the title */
+  font-weight: 400; /* Bold style */
+  margin-bottom: 50px;
+}
+
+#example-2 p {
+  font-size: 1.8rem; /* Slightly larger for subtitle */
+  font-weight: 20; /* Regular weight */
+  margin-bottom: 50px;
+  margin-left: 900px;
+  max-width: 600px; /* Optional: Set max width for better readability */
+}
+/* Contact Section Styles */
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  height: 100vh; /* Full height of the viewport */
+  background-image: url('PortfolioImages/steve-johnson-rYYkvS7RsLg-unsplash.jpg'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire hero section */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-repeat: repeat;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  scroll-snap-align: start; /* Align this section to the start */
+}
+#contact h1 {
+  font-size: 7rem; /* Larger font size for the title */
+  font-weight: 400; /* Bold style */
+  margin-bottom: 50px;
+}
+
+#contact p {
+  font-size: 1.8rem; /* Slightly larger for subtitle */
+  font-weight: 20; /* Regular weight */
+  margin-bottom: 50px;
+  margin-left: 50px;
+  max-width: 600px; /* Optional: Set max width for better readability */
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Main Content Styles */
+#main-content {
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
